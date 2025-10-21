@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Resume() {
+export default function Resume({ activeSection }) {
   return (
-    <section id="resume" className="resume py-8">
+    <section id="resume" className={"resume py-8 " + (activeSection === '#resume' ? 'section-show' : '')}>
       <div className="container mx-auto px-4">
         <div className="section-title">
           <h2 className="text-sm uppercase text-gray-400">Resume</h2>
